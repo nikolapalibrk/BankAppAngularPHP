@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Edit Accounts</h2>
+  <hr>
+  <div class="row">
+    <div class="col-sm-8 col-sm-push-2">
+      <table class="table  table-striped">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Deposit</th>
+          <th>Credit Card</th>
+          <th></th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="user in users">
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.deposit}}</td>
+            <td>{{user.creditCard}}</td>
+            <td><a href="#editAccount" id="editBtn" ng-click="setActive(user)" class="btn btn-warning">Edit</a></td>
+            <td><a  id="delBtn" ng-click="deleteAccount(user.id)" class="btn btn-danger">Delete</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

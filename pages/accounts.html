@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Accounts</h2>
+  <hr>
+  <div class="row">
+    <div class="col-sm-8 col-sm-push-2">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Deposit</th>
+          <th>Credit Card</th>
+        </tr>
+        </thead>
+        <tbody >
+          <tr ng-repeat="user in users">
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.deposit}}</td>
+            <td>{{user.creditCard}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
